@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Technical Questions - Kamaljeet site</title>
+		<meta name="author" content="Kamaljeet Gill" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!--Support UTF-8 characters without serverside HTTP head-->
+		<link href="icon.png" rel="shortcut icon" />
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!-- Those contenta located at the left of the page, fixed -->
+		<div id="pageleft">
+			<!-- HTML5 nav -->
+			<div id="h5_nav">
+				<a href="index.html">Homepage</a>
+				<a href="ans.html">Answers</a>
+				<a href="contact.html">Contact me</a>
+			</div>
+			<!-- HTML5 footer -->
+			<div id="h5_footer">
+				<a href="mailto:kamaljeet20793@gmail.com">kamaljeet20793@gmail.com</a><br />
+			</div>
+		</div>
+		<!-- Back to top button, fixed to right-bottom corner of page -->
+		<div id="totop" onclick="window.scroll(0,0);">TOP</div>
+		<!-- HTML5 main. Those contenta located at the right of the page, absolute -->
+		<!-- This is the only part that is different in each page, thinking this web is like a SPA while AJAX changing content in main tag -->
+		<div id="h5_main">
+			<!-- Technical Answers -->
+			<div class="favorite">
+				<h1>Technical questions</h1>
+				<div class="PLTR">
+					<div>
+							Please answer the following questions in a markdown file called Answers to technical questions.md.<br />
+						<b>Answers</b><br />
+						<ol>
+							<li>How long did you spend on the coding test? What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add?</li>
+							<p>I decided to create this app in angularjs as I found that it is the best suitable framework for a single page application such as the task give.
+							   I spend little over 2 hours completing this challenge. Learning the syntactical implentation of Angular and implementing it took me this time as i was new Angular.</p>
+							<li>What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it?</li>
+							<p>I have used the AngularJs. i.e. the first version of Angular. there are many updates to angular happened since than. currently the latest version in use is Angular5 which is syntactically different than Angularjs.
+								well there are many new features introduced in it :</p>
+								<ul>
+									<li>Better optimization techniques</li>
+									<li>Faster builds</li>
+									<li>A new options for form fields i.e. updateOn, checks for validity on blur or submit.</li>
+									<li>Additional router events.</li>
+									<li>and many more</li>
+
+								</ul>
+							<li>How would you track down a performance issue in production? Have you ever had to do this?</li>
+							<p>There are many ways we can test for performance issue in production. Generally speaking performance of any application is related to the following things:</p>
+								<ul>
+										<li>Slow SQL statements or excessive sql queries</li>
+										<li>Slow web Service calls</li>
+										<li>Slow response or coupling with third party application</li>
+										<li>Exhaustion of connection pool</li>
+										<li>Excessive cache usage etc.</li>
+								</ul>
+							<p>thus tracking for the above helps to find bugs or problems that are affecting performance of an applicaions. 
+								You can also use the developers tools to analyse the response time of a request from the server which might help to find the appropriate cause. 
+								Using tools such as wireshark which helps in packet sniffing to look for additional data
+								to help diagnose performance issue in a web application</p>
+							<li>How would you improve the API that you just used?</li>
+							<p> I havent created any api to handle the request. But I can create the api using python.</p>
+							<li>Please describe yourself using JSON.</li>
+							<p>{<br>
+									name : "Kamaljeet Singh Gill", <br>address : "64 Marshall Street", <br>phnno : "3068812001",<br>
+									education : [<br>
+									{<br>
+									degree : "Msc in Computer Science", <br> school : "University of Windsor",<br> year : "2018",<br>
+									status : "Graduated",<br>
+									},<br>
+									],<br>
+									work : [<br>
+									{<br>
+									position : "Application Engineer",<br>
+									company : "Enwin Utilties",<br>
+									fromto : "2016-2017",<br>
+									position2 : "Programmer Analyst QA", <br>company2 : "Cognizant",<br>
+									fromto : "2015-2016",<br>
+									},<br>
+									],<br>
+									hobbies : [<br> "travelling",<br> "gymnasium",<br> "soccer",<br>
+									"tech-live streaming" ]<br>
+									}<br>
+								</p>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- This page is designed to be display for desktop environment ONLY! Minimum resolution: 1280px width * 600px height -->

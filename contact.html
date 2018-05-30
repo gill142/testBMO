@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Contact me - Kamaljeet Gill site</title>
+		<meta name="author" content="Kamaljeet Gill"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!--Support UTF-8 characters without serverside HTTP head-->
+		<link href="icon.png" rel="shortcut icon" />
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="talk.js"></script>
+	</head>
+	<body>
+		<!-- Those contenta located at the left of the page, fixed -->
+		<div id="pageleft">
+			<!-- HTML5 nav -->
+			<div id="h5_nav">
+				<a href="index.html">Homepage</a>
+				<a href="ans.html">Answers</a>
+				<a href="contact.html">Contact me</a>
+			</div>
+			<!-- HTML5 footer -->
+			<div id="h5_footer">
+				<a href="mailto:kamaljeet20793@gmail.com">kamaljeet20793@gmail.com</a><br />
+			</div>
+		</div>
+		<!-- Back to top button, fixed to right-bottom corner of page -->
+		<div id="totop" onclick="window.scroll(0,0);">TOP</div>
+		<!-- HTML5 main. Those contenta located at the right of the page, absolute -->
+		<!-- This is the only part that is different in each page, thinking this web is like a SPA while AJAX changing content in main tag -->
+		<div id="h5_main">
+			<div>
+				<h1>Talking room</h1>
+				<!-- The Talking room is the feedback form, user send me message via the talkingroom, and I will resbonse to the user online -->
+				<!-- The talking room will be processed by JavaScript -->
+				<!-- Normally, this shoulb be processed by JavaScript with time-period AJAX background program, but here we are not talking anything about the server side, so I will write a fake one -->
+				<!-- You can post a message, you will see the message, but the message will not been send to the server -->
+				<div id="talkingroom"></div>
+				<div id="talkingroomUI">
+					<h3>Send a message</h3>
+					<b>Your name:</b><br />
+					<input id="talkname" />
+					<b>Your message:</b><br />
+					<textarea id="talkmessage" rows="5" cols="100"></textarea>
+					<button onclick="talk()">POST</button>
+				</div>
+			</div>
+			<div>
+				<h1>Send me an e-mail</h1>
+				You can send me an e-mail via <a href="mailto:kamaljeet20793@gmail.com">kamaljeet20793@gmail.com</a>.
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- This page is designed to be display for desktop environment ONLY! Minimum resolution: 1280px width * 600px height -->
